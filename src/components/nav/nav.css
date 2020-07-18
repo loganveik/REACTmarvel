@@ -1,3 +1,16 @@
 .nav{
     background-color: black;
 }
+.logo{
+    width:125px;
+    margin: 0px auto
+}
+
+
+#profilegobtn{
+    color: white;
+    line-height: 50px;
+}
+#profilegobtn:hover{
+    color: crimson;
+}
