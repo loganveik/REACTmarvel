@@ -10,8 +10,14 @@ function charcomicsearchbar(props) {
                     <form>
                         <div className="form-group text-center my-2">
                             <h1 className="searchforanymarvelcharacter">{props.SEARCHcharORcomic}</h1>
-                            <input type="search" className="form-control" id="searchedChar" placeholder={props.placeholder} />
-                            <button type="submit" className="btn my-2 mx-2" id="searchbtn">Search <i
+                            <input type="search" 
+                            className="form-control" 
+                            name="searchedChar" 
+                            placeholder={props.placeholder} 
+                            value={props.value}
+                            onChange={props.handleInputChange}
+                            />
+                            <button onClick={props.handleFormSubmit} type="submit" className="btn my-2 mx-2" id="searchbtn">Search <i
                                 className="fas fa-search ml-1"></i></button>
                         </div>
                     </form>

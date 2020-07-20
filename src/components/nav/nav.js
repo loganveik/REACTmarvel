@@ -5,7 +5,9 @@ function nav(props) {
     return (
         <div>
             <nav className="nav text-center">
-                <div className="col-lg-2">
+                <div className="col-lg-2"
+                onClick={props.backToProfile}
+                >
                     {props.profilebtn}
                 </div>
                 <div className="col-lg-8">
